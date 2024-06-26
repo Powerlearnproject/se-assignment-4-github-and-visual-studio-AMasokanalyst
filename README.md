@@ -9,6 +9,34 @@ Questions:
 Introduction to GitHub:
 
 What is GitHub, and what are its primary functions and features? Explain how it supports collaborative software development.
+GitHub is a web-based platform for version control and collaborative software development, utilizing Git, a distributed version control system, to manage and track code changes. github has features, such as repositories, version control, collaboration tools, code hosting management, documentation, security features, and community and social coding. 
+
+Primary features and functions of Github
+
+Repositories:
+Is a central storage space for projects, containing all project files and revision history. Github has an option to either make repositories public or private. Public repositories are visible to everyone, while private repositories are only visible to the owner and the collaborators.
+
+Version Control:
+Tracks changes in code over time, allowing developers to revert to previous versions. It has fundamental aspects such as branching and merging.
+
+Collaboration Tools:
+Offers different options such as pull request, issues and projects. Pull Requests allows developers to notify team members about changes pushed to a branch. Issues provides an issue tracker for managing tasks, enhancements, and bugs. Projects helps manage and organize work with Kanban-style boards.
+
+Code Hosting and Management:
+• Hosts code repositories in the cloud and supports Git Large File Storage.
+• Allows for continuous integration/continuous deployment (CI/CD) through GitHub Actions.
+
+Documentation:
+Include GitHub pages that hosts websites directly from a repository, thereby providing an option to have each repository to have an associated wiki.
+
+Security Features:
+Security features offered by Github include dependency graphs, security advisories and code scanning. Dependency Graphs visualizes dependencies and vulnerabilities. Security Advisories creates and views advisories for repositories. Code Scanning are automated code reviews used to detect vulnerabilities and coding errors.
+
+Community and Social Coding:
+Github offers an easy way for software developer to be able to interact with each other's work by forking. Forking is used to copy a repository to your GitHub account, make changes, and propose merging back to the original project.
+
+GitHub facilitates collaborative software development through distributed workflows, code reviews, task management, automated workflows, and community contributions. It allows multiple developers to work on different parts of a project, enables code reviews, and facilitates automated testing and deployment processes. It also allows developers to fork repositories and contribute back to the original project.
+
 Repositories on GitHub:
 
 What is a GitHub repository? Describe how to create a new repository and the essential elements that should be included in it.
