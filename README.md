@@ -214,6 +214,29 @@ CI workflows automatically run tests and build processes every time a pull reque
 Introduction to Visual Studio:
 
 What is Visual Studio, and what are its key features? How does it differ from Visual Studio Code?
+
+Microsoft's Visual Studio is an IDE that is designed to be used with multiple programming languages and development tools. It is a complete suite of tools for creating applications that can be used on a variety of platforms, such as Windows, the web, mobile devices, and cloud computing. Visual studio code is also a product of microsoft, however it differs from visual studio in that it is a lightweight, open-source code editor that is highly expandable, enabling developers to add features and capabilities through extensions. It is designed to make coding quick and easy.
+
+Difference between visual studio and visual studio code
+
+Type:	
+Visual Studio is a full-fledged IDE	while VS Code is a text editor (AKA Code editor).
+
+Platform:	
+Visual Studio runs on Windows and Mac while	VS Code runs on Windows, Mac, and Linux.
+
+Size:	
+Visual Studio is relatively large. You might have to download more than 40 GB on Windows and over 6 GB on Mac while	VS Code does not require more than 200 MB on any platform.
+
+Support:
+Visual Studio has built in support for C# and .NET, alongside several common languages apart from Java. VS Code supports JavaScript, Typescript, and Node JS out of the box. VS code also supports other programming languages – as long as there’s an extension(s) for that.
+
+Pricing:	
+Visual Studio Community Edition is free, but the professional and enterprise editions code $45 and $250 per month respectively.	VS Code is free. Most of the extensions are also free but there are freemium ones
+
+Extensions:	
+Visual Studio does not have as many extensions as VS Code. VS Code has numerous professionally and curated extensions for various purposes
+
 Integrating GitHub with Visual Studio:
 
 Describe the steps to integrate a GitHub repository with Visual Studio. How does this integration enhance the development workflow?
