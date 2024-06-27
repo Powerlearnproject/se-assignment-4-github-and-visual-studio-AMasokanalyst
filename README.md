@@ -66,9 +66,14 @@ License: To make it clear to others how they can use your code, use an open-sour
 Version Control with Git:
 
 Explain the concept of version control in the context of Git. How does GitHub enhance version control for developers?
+
+Git is an open-source version control system that enables developers to continuously update their projects, keeping revisions in a central repository for easy access. GitHub is a cloud-based platform developed around the Git tool, which is used to store source code for projects and maintain the complete history of all changes made to those files. The primary distinction is that, whereas GitHub is an online site that developers using Git may connect to and post or download files, Git is software that developers can install locally on a system to manage source code. Git repositories can be hosted on GitHub.
+
+
 Branching and Merging in GitHub:
 
 What are branches in GitHub, and why are they important? Describe the process of creating a branch, making changes, and merging it back into the main branch.
+
 Pull Requests and Code Reviews:
 
 What is a pull request in GitHub, and how does it facilitate code reviews and collaboration? Outline the steps to create and review a pull request.
