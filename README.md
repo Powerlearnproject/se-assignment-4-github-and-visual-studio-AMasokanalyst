@@ -159,7 +159,8 @@ Automated Workflow Creation
 
     • Add Actions: Use GitHub Actions or custom scripts to perform tasks like code checking, dependency setup, testing, or application deployment.
 
-    Example of continuous integration and continous deployement(CI/CD) workflow
+    
+Example of continuous integration and continous deployement(CI/CD) workflow
 
 name: CI/CD Pipeline
 
@@ -207,6 +208,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Deploy to Production
         run: ./deploy.sh
+
 
 CI workflows automatically run tests and build processes every time a pull request is created or updated. CD automatically deploy applications to staging or production environments when pull requests are merged.
 
