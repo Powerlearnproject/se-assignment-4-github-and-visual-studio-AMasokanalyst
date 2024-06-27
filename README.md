@@ -9,6 +9,7 @@ Questions:
 Introduction to GitHub:
 
 What is GitHub, and what are its primary functions and features? Explain how it supports collaborative software development.
+
 GitHub is a web-based platform for version control and collaborative software development, utilizing Git, a distributed version control system, to manage and track code changes. github has features, such as repositories, version control, collaboration tools, code hosting management, documentation, security features, and community and social coding. 
 
 Primary features and functions of Github
@@ -23,8 +24,7 @@ Collaboration Tools:
 Offers different options such as pull request, issues and projects. Pull Requests allows developers to notify team members about changes pushed to a branch. Issues provides an issue tracker for managing tasks, enhancements, and bugs. Projects helps manage and organize work with Kanban-style boards.
 
 Code Hosting and Management:
-• Hosts code repositories in the cloud and supports Git Large File Storage.
-• Allows for continuous integration/continuous deployment (CI/CD) through GitHub Actions.
+Hosts code repositories in the cloud and supports Git Large File Storage. Allows for continuous integration/continuous deployment (CI/CD) through GitHub Actions.
 
 Documentation:
 Include GitHub pages that hosts websites directly from a repository, thereby providing an option to have each repository to have an associated wiki.
@@ -40,6 +40,29 @@ GitHub facilitates collaborative software development through distributed workfl
 Repositories on GitHub:
 
 What is a GitHub repository? Describe how to create a new repository and the essential elements that should be included in it.
+
+A GitHub repository is a platform that allows users to manage, organize, and track their code, fostering collaboration and continuous improvement.
+
+GitHub Repository Creation
+
+• Log in and click profile icon, then select "New repository."
+
+• Choose name and optional description.
+
+• Set repository visibility either public or private.
+
+• Initialize with README.
+
+• Click "Create repository."
+
+Essential Elements
+
+READ ME: Explain the goal of your project and its intended use.
+
+gitignore: Indicate certain files or directories—such as sensitive data or build artifacts—to ignore.
+
+License: To make it clear to others how they can use your code, use an open-source license (such as MIT or Apache).
+
 Version Control with Git:
 
 Explain the concept of version control in the context of Git. How does GitHub enhance version control for developers?
