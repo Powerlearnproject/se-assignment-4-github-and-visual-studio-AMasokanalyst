@@ -111,16 +111,106 @@ Creating Branches using command line interface
     3. Staging and commiting changes
         git add .
         git commit -m "Description of the changes"
-          
+
     4. Pushing the new branch to github
         git push origin new-branch-name         
 
 Pull Requests and Code Reviews:
 
 What is a pull request in GitHub, and how does it facilitate code reviews and collaboration? Outline the steps to create and review a pull request.
+
+Forking a repository allows us to work with it separately, obtaining an instance of the entire repository's history and allowing us to modify it without affecting the original version, this is where pull request comes in. A pull request in GitHub is a proposal to merge a set of changes from one branch into another. We contribute to collaborative projects or open-source projects through pull requests.
+
+Creating Pull Request
+
+    • Navigate to repository's main page.
+
+    • Choose branch with commits.
+
+    • Click "Compare & pull request" in yellow banner.
+
+    • Provide changes details.
+
+    • Submit pull request.
+
+Reviewing Pull Request:
+
+    • Examine changes.
+
+    • Leave comments, suggest improvements, approve pull request.
+
+    • Discuss concerns or questions.
+
+Once approved, the changes can be merged into the default branch.
+
 GitHub Actions:
 
 Explain what GitHub Actions are and how they can be used to automate workflows. Provide an example of a simple CI/CD pipeline using GitHub Actions.
+
+Github Actions is a powerfull automation tool imbedded on Github. Github Actions functions as a plugin for intricate workflow chores by enabling shell commands against repository code that are triggered by events such as commit, pull request, or scheduling. By creating workflows that respond to events, you can automate tasks such as running tests, linting code, deploying applications, and more. Github Actions automation not only saves time but also reduces the potential for human error, making your software delivery process more efficient and reliable.
+
+Automated Workflow Creation
+
+    • Define Workflow File: Create a.github/workflows directory and a YAML file to define the workflow.
+
+    • Specify Events: Use the on key to trigger the workflow on pull_request events.
+
+    • Define Jobs: Use the jobs key to define specific jobs to run, with specific steps for each job.
+
+    • Add Actions: Use GitHub Actions or custom scripts to perform tasks like code checking, dependency setup, testing, or application deployment.
+
+    Example of continuous integration and continous deployement(CI/CD) workflow
+
+name: CI/CD Pipeline
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm install
+      - run: npm test
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Run linter
+        run: npm run lint
+
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v1
+        with:
+          languages: javascript
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v1
+
+  deploy:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy to Production
+        run: ./deploy.sh
+
+CI workflows automatically run tests and build processes every time a pull request is created or updated. CD automatically deploy applications to staging or production environments when pull requests are merged.
+
+
 Introduction to Visual Studio:
 
 What is Visual Studio, and what are its key features? How does it differ from Visual Studio Code?
