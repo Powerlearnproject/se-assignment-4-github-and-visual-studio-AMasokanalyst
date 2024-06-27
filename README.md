@@ -242,6 +242,43 @@ Visual Studio does not have as many extensions as VS Code. VS Code has numerous 
 Integrating GitHub with Visual Studio:
 
 Describe the steps to integrate a GitHub repository with Visual Studio. How does this integration enhance the development workflow?
+
+Steps to Github repository with Visual Studio
+
+    1. Github account authentication
+    This step allows you to create and manage repositories directly from Visual Studio
+
+        • Open Visual Studio.
+
+        • Navigate to File > Account Settings.
+
+        • Click Add GitHub Account.
+
+        • Authenticate using GitHub credentials.
+
+    2. Repository Creation and Clone Process
+
+        • Create a new project: Click Create a new project.
+
+        • Choose a template (e.g., ASP.NET, C#).
+
+        • Select GitHub as the version control system.
+
+        • Clone an existing repository: Click Clone or check out code.
+
+        • Enter the repository URL (HTTPS or SSH). 
+
+    3. Working with git on visual studio
+
+        • Branching and Committing:
+        Create branches, stage changes, and commit using the Git Changes tool window.
+        
+        • Pull Requests:
+        Create pull requests directly from Visual Studio. Add titles, descriptions, reviewers, and see changes summarized.
+
+GitHub integration with Visual Studio improves development workflow by enabling seamless collaboration, issue tracking, code reviews, efficient Git operations, automated CI/CD workflows, and Azure deployment for ASP.NET Core applications. It also provides integrated tools for Git, debugging, and testing, and allows for extension functionality with VS Code extensions. Customization allows for tailored workflows.
+             
+
 Debugging in Visual Studio:
 
 Explain the debugging tools available in Visual Studio. How can developers use these tools to identify and fix issues in their code?
